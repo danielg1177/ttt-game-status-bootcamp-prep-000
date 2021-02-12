@@ -41,4 +41,5 @@ def winner(board)
   winning_token
   else
     return nil
+  end
 end
