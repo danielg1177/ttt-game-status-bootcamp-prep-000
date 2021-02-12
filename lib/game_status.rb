@@ -35,11 +35,11 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board) != false
+  if draw?(board) || !full?(board)
+    return nil
+  else
     winning_combo = won?(board)
     winning_token = board[winning_combo[0]]
     return winning_token
-  else
-    return nil
   end
 end
