@@ -33,3 +33,9 @@ end
 def over?(board)
   draw?(board) || won?(board) || full?(board)
 end
+
+def winner(board)
+  winning_combo = won?(board)
+  winning_token = winning_combo[0]
+  winning_token
+end
