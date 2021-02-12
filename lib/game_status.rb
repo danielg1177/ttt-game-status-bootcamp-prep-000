@@ -25,3 +25,9 @@ def full?(board)
     position != " " && position != nil
   end
 end
+
+def draw?(board)
+  if full?(board) == true && won?(board) == false
+    return true
+  end
+end
