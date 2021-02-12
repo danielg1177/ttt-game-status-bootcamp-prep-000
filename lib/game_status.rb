@@ -39,5 +39,6 @@ def winner(board)
   winning_combo = won?(board)
   winning_token = board[winning_combo[0]]
   winning_token
-else
+  else
+    return nil
 end
